@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: rgba(158, 158, 158, 0.349);
+}
+
+.navbar{
+    background: rgb(22, 22, 32);
+    height: 50px;
+}
+
+li{
+    font-size: 15pt;
+    display:inline;
+    color: white;
+    border: 1pt solid;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+}
+
+.displayWords{
+    margin: 10px 0 10px 0;
+    border: 2pt solid;
+    width: 400pt;
+    height: 400px;
+}
+
+.displayUserInputs{
+    margin: 10px 0 10px 0;
+    border: 2pt solid;
+    width: 400pt;
+    height: 100px;
+}
+
+.displayUserInputs input{
+    margin-top: 5px;
+}
+.UserInputText{
+    height: 80px;
+    width: 400px;
+}

@@ -4,54 +4,66 @@ const WriteOnScreen = document.querySelector('.WriteOnScreen')
 
 function splitTheWords(){
     const txtWords = txtContetInput.value
-    const spitTextContent = txtWords.split(' ')
+    const splitTextContent = txtWords.split(' ')
 
-    console.log(spitTextContent)
+    console.log(splitTextContent)
     let currentArrayItem = 0
-    spitTextContent.forEach((value, index) => {
-            WriteOnScreen.innerHTML = spitTextContent[index, value]
+    splitTextContent.forEach((value, index) => {
+            WriteOnScreen.innerHTML = splitTextContent[index, value]
         },900)
 
     };
 
-function FilaTest(){
-    var fila = []
-    for(i = 0; i < 10; i++){
-        fila.push(i)
-        console.log(fila)
-    }
-    for(i = 0; i < 10; i++){
-        fila.shift()
-        console.log(fila)
-    }
 
-}
-
-function linkeList(){
-    class ListNode {
+function linkedList(){
+    class listNode {
         constructor(data){
             this.data = data
             this.next = null
         }
     }
 
-    class LinkedList {
+    class LinkedList{
+
         constructor(head = null){
-            this.head = head;
+            this.head = head
         }
     }
 
-    let node1 = new ListNode(2)
-    let node2 = new ListNode(5)
+    const nodeText = 'There are a few different types of linked lists. But the most popular'
+
+    //Array
+    const splitNodeText = nodeText.split(' ')
+    //Will add a number +1 in each function to they be different
+    let idNumber = 0
+
+    splitNodeText.forEach((value, index) =>{
+
+        let varNodeName = `nodeString${idNumber}`
+        
+        varNodeName = new listNode(1)
+        if(idNumber >= 1){
+            varNodeName.next = varNodeName
+        }
+        let newList = new linkedList(varNodeName)
+        console.log(list.head.next.data)
+        idNumber += 1
+    })
+
+    let node1 = new listNode(2)
+    let node2 = new listNode('as')
+
+    let node3 = new listNode(10)
     node1.next = node2
+    //node1 will next to node2    
 
     let list = new LinkedList(node1)
     console.log(list.head.next.data)
+
 }
 
 
 btnInput.addEventListener('click',function(){
     splitTheWords()
-    //FilaTest()
-    linkeList()
+    linkedList()
 })

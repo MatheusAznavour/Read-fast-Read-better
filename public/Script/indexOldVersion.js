@@ -1,18 +1,34 @@
-const btnInput = document.getElementsByClassName('UserInputBtn')[0]
-const txtContetInput = document.getElementsByClassName('UserInputText')[0]
+
+
+const btnInput = document.querySelector('.UserInputBtn')
+const txtContetInput = document.querySelector('.UserInputText')
 const WriteOnScreen = document.querySelector('.WriteOnScreen')
 
 function splitTheWords(){
     const txtWords = txtContetInput.value
-    const spitTextContent = txtWords.split(' ')
+    const splitTextContent = txtWords.split(' ')
+    const arrayMaxCount = splitTextContent.length 
 
-    console.log(spitTextContent)
-    let currentArrayItem = 0
-    spitTextContent.forEach((value, index) => {
-        setTimeout(function(){
-            WriteOnScreen.innerHTML = spitTextContent[index, value]
-            currentArrayItem += 1
-        },900)
+    //console.log(splitTextContent)
+    let countLoops = 0
+
+       splitTextContent.forEach((value, index) => {
+        setInterval(function(){
+
+            WriteOnScreen.innerHTML = splitTextContent[index]
+            
+            console.log('INDEX: ',value)
+
+            //array chega ao maximo
+            console.log('ARRAY: ',arrayMaxCount)
+            /*
+
+            if(index == arrayMaxCount){
+                    return console.log('End of array..')
+            }
+            */
+        
+        }, 500 * (index + 1))
 
     });
 

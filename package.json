@@ -1,7 +1,6 @@
 {
   "name": "read-fast",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "server": "src/server.ts"
@@ -17,6 +16,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "jquery": "^3.6.0",
-    "karma": "^6.3.4"
-  }
+    "karma": "^6.3.4",
+    "ts-node": "^10.2.1"
+  },
+  "description": ""
 }

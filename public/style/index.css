@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: #C8D8E4;
+}
+
+.navbar h3{
+    text-align: center;
+}
+.navbar{
+    background: rgb(255, 255, 255);
+    height: 50px;
+}
+
+.Donate-Page{
+    background: #52AB98;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+li{
+    font-size: 15pt;
+    display:inline;
+    color: #52AB98;
+    margin: 0 5px;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+}
+
+.displayWords{
+    margin: 10px 0 10px 0;
+    width: 400pt;
+    height: 400px;
+}
+.WriteOnScreen{
+    vertical-align: middle;
+    text-align: center;
+    line-height: 400px;
+}
+
+.displayUserInputs{
+    padding: 10px 0;
+    background: #2B6777;
+    border-radius: 5px;
+    width: 400pt;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.displayUserInputs p {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.displayUserInputs input[type="button"]{
+    color: #2B6777;
+    font-weight: bold;
+    cursor: pointer;
+    height: 20px;
+    margin-top: 5px;
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.UserInputSecs {
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    height: 20px;
+}
+
+.UserInputText{
+    border: none;
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+}

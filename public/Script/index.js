@@ -1,22 +1,27 @@
 const btnInput = document.querySelector('.UserInputBtn')
-const txtContetInput = document.querySelector('.UserInputText')
+const txtContet = document.querySelector('.UserInputText')
 const displayMessages = document.querySelector('.WriteOnScreen')
 const Seconds = document.querySelector('.UserInputSecs')
+const Height = document.querySelector('.UserInputHeight')
 
-var btnIsPressed = false;
+let btnIsPressed = false;
 
- function splitTheWords(){
+Seconds.value = 500
+Height.addEventListener('change', function(val){
+    console.log(Height)
+    displayMessages.style.fontSize = `${Height.value}pt`
+})
+
+function splitTheWords(){
     btnIsPressed = true
 
-    const txtWords = txtContetInput.value
+    const txtWords = txtContet.value
     const splitTextContent = txtWords.split(' ')
-    const arrayMaxCount = splitTextContent.length
 
         const showNextWord = splitTextContent.forEach((value, index, array) => {
             const showNextWord = setInterval(function(){
                 displayMessages.innerHTML = splitTextContent[index]
                 clearInterval(showNextWord)
-
                 //Will block your interaction with the input at the array end
                 if(index === array.length -1){
                     displayMessages.innerHTML = '<p>Your read end </P>'
@@ -27,7 +32,6 @@ var btnIsPressed = false;
 
     });
 }
-
 
 function checkUserInputs(){
     if(!btnIsPressed){

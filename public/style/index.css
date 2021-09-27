@@ -38,24 +38,23 @@ li{
     margin: 10px 0 10px 0;
     width: 400pt;
     height: 400px;
+    margin: auto;
+    text-align: center;
 }
 .WriteOnScreen{
+    font-size: 20pt;
     vertical-align: middle;
-    text-align: center;
     line-height: 400px;
 }
 
 .displayUserInputs{
+    height: 230px;
     padding: 10px 0;
     background: #2B6777;
-    border-radius: 5px;
-    width: 400pt;
     text-align: center;
-    vertical-align: middle;
 }
 
 .displayUserInputs p {
-    font-weight: bold;
     color: rgb(255, 255, 255);
 }
 
@@ -69,17 +68,33 @@ li{
     width: 80px;
     border-radius: 10px;
 }
+.UserInputText{
+    text-decoration: none;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 130px;
+    width: 400px;
+}
+.UserInputText::-webkit-input-placeholder{
+    text-align: center;
+}
 
 .UserInputSecs {
+    text-align: center;
     border: none;
     border-radius: 10px;
     margin: 10px 0 0 0;
     height: 20px;
 }
+.UserInputSecs::-webkit-input-placeholder{
+    text-align: center;
+}
 
-.UserInputText{
+.UserInputHeight {
+    text-align: center;
     border: none;
     border-radius: 10px;
-    height: 80px;
-    width: 400px;
+    margin: 10px 0 0 0;
+    height: 20px;
 }
